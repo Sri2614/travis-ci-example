@@ -7,5 +7,6 @@ script: ./mvnw clean install
 jobs:
   include:
     - stage: Test
+      script: ./mvnw clean test
 notifications:
   email: sribalaji2614@gmail.com
