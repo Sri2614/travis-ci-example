@@ -4,5 +4,8 @@ jdk:
 before_install:
   - chmod +x mvnw
 script: ./mvnw clean install
+jobs:
+  include:
+    - stage: Test
 notifications:
   email: sribalaji2614@gmail.com
